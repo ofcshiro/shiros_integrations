@@ -39,6 +39,7 @@ Config.ClientNotification = function(type, msg)
     -- As am example:
     
     TriggerEvent("ESX:Notify", type, Config.NotifyTime, msg)
+    --exports['okokNotify']:Alert(Config.ServerName, msg, Config.NotifyTime, type)
 
 end
 
