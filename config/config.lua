@@ -89,13 +89,13 @@ Config.Drugs = {
             positive = true, -- If true it heals, if false it damages
             overtime = true -- if true it heals over time, if false its 1 time heal
         },
-        hunger = { -- doesnt work (at the moment)
+        hunger = { 
             enable = true,
             amount = 12500, -- The Amount the Hunger increase
             positive = false, -- if true it adds hunger, if false it removes hunger
             overtime = true -- if true it adds hunger over time, if false its 1 time 
         },
-        thirst = { -- doesnt work (at the moment)
+        thirst = { 
             enable = true,
             amount = 12500, -- The amount of thirst incrase
             positive = false, -- if true it adds thirst, if false it removes thirst
