@@ -8,15 +8,6 @@ if Config.EnableSV['drugscreator'] then
                 local time = data.effectDuration * 100
                 local hcount, fcount, dcount = 0, 0, 0
                 xPlayer.removeInventoryItem(itemname, 1)
-
-                if Config.Logging then
-                    ESX.DiscordLogFields("Drogen", "Drogen genommen", "orange", {
-                        { name = "Player", value = source, inline = true },
-                        { name = "Amount set", value = money, inline = true },
-                        { name = "Source", value = GetInvokingResource(), inline = true },
-                        { name = "Reason", value = reason, inline = true }
-                    })
-                end
                 
                 TriggerClientEvent("advanced_drugs_creator:drugEffects", source, data.takingMethod, data.drugEffects, data.effectDuration)
                 
