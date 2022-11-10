@@ -3,7 +3,6 @@ Config = {}
 -- Language Settings
 Config.Locale = "de" -- Currently not Used
 Config.ServerName = 'SERVERNAME' -- In case your Notify uses a title, you can use Config.ServerName as title
-Config.Logging = true -- If you want Discord Logs for Drugs etc
 
 -- General Settings
 ------------------------------------------------------------------------------------------
