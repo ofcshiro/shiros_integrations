@@ -22,7 +22,8 @@ https://github.com/esx-framework/esx-legacy
 * put ensure shiros_integrations in your server.cfg
 
 ## Version History
-
+* 2.0
+    * Added Extended Drugs (ESX Only)
 * 1.0
     * Initial Release
 
