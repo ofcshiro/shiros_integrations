@@ -6,6 +6,9 @@ Its an integration Script that makes it easy to replace certain features
 in any of Jaksams Scripts at once. Currently only Default Notify and Progressbar 
 is supported. But im looking forward to update it and add more integration options.
 
+With 2.0 Extended Drugs were added. Those can only be used with Drugs Creator since
+the main purpose of this Script is to make Integration easier.
+
 
 ## Getting Started
 
@@ -33,6 +36,6 @@ This project is licensed under the GNU General Public License v3.0 - see the LIC
 
 ## Acknowledgments
 
-Inspiration, notify function
+Inspiration, notify function, register items as useable (esx)
 * [Mycroft](https://github.com/Mycroft-Studios) - He send me the function for Notify
 * [Lucid](https://github.com/LucidB1) - Helped me registering the Drugs as usable items
