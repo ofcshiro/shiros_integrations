@@ -68,6 +68,20 @@ Config.ProgressbarType = function(time, text)
     exports['progressBars']:startUI(time, text)
 end
 
+Config.PoliceNotify = true
+
+Config.ClientPoliceNotify = function(coords, message)
+    ------------------------------------------------------------------------------------------
+    -- Insert your Police Notify System here. (script uses type (Config.NotifyType)))
+    ------------------------------------------------------------------------------------------
+    local anonym = true
+    local position = {x = coords.x, y = coords.y, z = coords.z - 1}
+    local jobreceived = 'police'
+    local message = message
+    
+    TriggerServerEvent('roadphone:sendDispatch', GetPlayerServerId(PlayerId()), message, jobreceived, position, anonym)
+
+end
 
 
 -- Extended Drugs
