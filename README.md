@@ -25,6 +25,8 @@ https://github.com/esx-framework/esx-legacy
 * put ensure shiros_integrations in your server.cfg
 
 ## Version History
+* 2.1
+    * Added Police Notify Support (Roadphone Dispatch configured as default)
 * 2.0
     * Added Extended Drugs (ESX Only)
 * 1.0
