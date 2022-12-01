@@ -30,4 +30,27 @@ if Config.Enable['vehiclekeys'] then
             Config.ProgressbarType(time, text)
         end)        
     end
+
+    if Config.PoliceNotify then 
+        if Config.PoliceColored then 
+            RegisterNetEvent("vehicles_keys:framework:ready", function() 
+                exports["vehicles_keys"]:disableScriptEvent("vehicles_keys:alertedPolice")
+            end)
+        
+            RegisterNetEvent("vehicles_keys:alertedPolice", function(coords, message)
+            
+                Config.ClientPoliceNotify(coords, message)
+            end)
+        else
+            RegisterNetEvent("vehicles_keys:framework:ready", function() 
+                exports["vehicles_keys"]:disableScriptEvent("vehicles_keys:alertedPolice")
+            end)
+        
+            RegisterNetEvent("vehicles_keys:alertedPolice", function(coords, message)
+                local uncoloredMessage = message:gsub("~.~", "")
+            
+                Config.ClientPoliceNotify(coords, uncoloredMessage)
+            end)
+        end
+    end
 end

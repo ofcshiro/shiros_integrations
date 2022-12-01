@@ -20,4 +20,27 @@ if Config.Enable['doorscreator'] then
             end)
         end
     end
+    
+    if Config.PoliceNotify then 
+        if Config.PoliceColored then
+            RegisterNetEvent("doors_creator:framework:ready", function() 
+                exports["doors_creator"]:disableScriptEvent("doors_creator:alertedPolice")
+            end)
+        
+            RegisterNetEvent("doors_creator:alertedPolice", function(coords, message)
+            
+                Config.ClientPoliceNotify(coords, message)
+            end)
+        else
+            RegisterNetEvent("doors_creator:framework:ready", function() 
+                exports["doors_creator"]:disableScriptEvent("doors_creator:alertedPolice")
+            end)
+        
+            RegisterNetEvent("doors_creator:alertedPolice", function(coords, message)
+                local uncoloredMessage = message:gsub("~.~", "")
+            
+                Config.ClientPoliceNotify(coords, uncoloredMessage)
+            end)
+        end
+    end
 end

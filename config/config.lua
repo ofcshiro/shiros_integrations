@@ -68,7 +68,8 @@ Config.ProgressbarType = function(time, text)
     exports['progressBars']:startUI(time, text)
 end
 
-Config.PoliceNotify = true
+Config.PoliceNotify = true -- If you want to replace the Police Notifiy
+Config.PoliceColored = false -- If your Police Notify should be colored or not
 
 Config.ClientPoliceNotify = function(coords, message)
     ------------------------------------------------------------------------------------------

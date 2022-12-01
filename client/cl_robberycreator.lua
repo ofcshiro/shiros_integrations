@@ -29,4 +29,27 @@ if Config.Enable['robberycreator'] then
             Config.ProgressbarType(newtime, text)
         end)
     end
+
+    if Config.PoliceNotify then 
+        if Config.PoliceColored then
+            RegisterNetEvent("robberies_creator:framework:ready", function() 
+                exports["robberies_creator"]:disableScriptEvent("robberies_creator:alertedPolice")
+            end)
+        
+            RegisterNetEvent("robberies_creator:alertedPolice", function(coords, message)
+            
+                Config.ClientPoliceNotify(coords, message)
+            end)
+        else
+            RegisterNetEvent("robberies_creator:framework:ready", function() 
+                exports["robberies_creator"]:disableScriptEvent("robberies_creator:alertedPolice")
+            end)
+        
+            RegisterNetEvent("robberies_creator:alertedPolice", function(coords, message)
+                local uncoloredMessage = message:gsub("~.~", "")
+            
+                Config.ClientPoliceNotify(coords, uncoloredMessage)
+            end)
+        end
+    end
 end

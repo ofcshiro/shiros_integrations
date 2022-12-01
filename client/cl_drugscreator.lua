@@ -28,4 +28,26 @@ if Config.Enable['drugscreator'] then
             Config.ProgressbarType(time, text)
         end)
     end
+
+    if Config.PoliceNotify then 
+        if Config.PoliceColored then 
+            RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
+                exports["advanced_drugs_creator"]:disableScriptEvent("advanced_drugs_creator:alertedPolice")
+            end)
+
+            RegisterNetEvent("advanced_drugs_creator:alertedPolice", function(coords, message)
+                Config.ClientPoliceNotify(coords, message)
+            end)
+        else
+            RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
+                exports["advanced_drugs_creator"]:disableScriptEvent("advanced_drugs_creator:alertedPolice")
+            end)
+
+            RegisterNetEvent("advanced_drugs_creator:alertedPolice", function(coords, message)
+                local uncoloredMessage = message:gsub("~.~", "")
+            
+                Config.ClientPoliceNotify(coords, uncoloredMessage)
+            end)
+        end
+    end
 end
