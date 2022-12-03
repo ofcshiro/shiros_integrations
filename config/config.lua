@@ -18,7 +18,8 @@ Config.Enable = {
     jobscreator = true, 
     luxuryclothes = true, 
     robberycreator = true,
-    vehiclekeys = true
+    vehiclekeys = true,
+    farmingcreator = true
 }
 
 Config.EnableSV = {
@@ -30,7 +31,8 @@ Config.EnableSV = {
     jobscreator = false, 
     luxuryclothes = false, 
     robberycreator = false,
-    vehiclekeys = false   
+    vehiclekeys = false,
+    farmingcreator = false
 }
 
 
