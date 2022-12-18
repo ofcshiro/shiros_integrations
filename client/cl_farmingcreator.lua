@@ -40,7 +40,7 @@ if Config.Enable['farmingcreator'] then
             end)
         else
             RegisterNetEvent("farming_creator:framework:ready", function() 
-                exports["vehicles_keys"]:disableScriptEvent("farming_creator:alertedPolice")
+                exports["farming_creator"]:disableScriptEvent("farming_creator:alertedPolice")
             end)
         
             RegisterNetEvent("farming_creator:alertedPolice", function(coords, message)
