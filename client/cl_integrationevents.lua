@@ -13,3 +13,11 @@ AddEventHandler('integrationEvents:playerHealth', function(amount, positive)
         SetEntityHealth(Player, NewHealth)
     end
 end)
+
+function fillFuel(vehicle)
+    if Config.FuelScript == 'legacy' then 
+        exports["LegacyFuel"]:SetFuel(vehicle, 100)
+    elseif Config.FuelScript == 'ox' then 
+        Entity(vehicle).state.fuel = 100
+    end
+end

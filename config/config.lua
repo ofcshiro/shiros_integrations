@@ -86,6 +86,11 @@ Config.ClientPoliceNotify = function(coords, message)
 
 end
 
+-- Jobs Creator Garage Features WORK IN PROGRESS
+Config.JobGarage = false -- If you use Job Vehicles
+Config.useFuel = true -- if you want to max fuel the Vehicle on Spawn
+Config.GarageType = 'temp' -- which Garage Type you use ('temp', 'perm', 'both')
+Config.FuelScript = 'ox' -- Which Fuel Script you use ('legacy', 'ox')
 
 -- Extended Drugs
 
