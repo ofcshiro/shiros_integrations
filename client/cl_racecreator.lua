@@ -2,7 +2,6 @@ if Config.Enable['racecreator'] then
     if Config.Notify then 
         if Config.Colored then 
             RegisterNetEvent("races_creator:framework:ready", function() 
-                -- Disables the default script notification (otherwise there would be 2 notifications)
                 exports["races_creator"]:disableScriptEvent("races_creator:notify")
             end)
             
@@ -11,7 +10,6 @@ if Config.Enable['racecreator'] then
             end)
         else
             RegisterNetEvent("races_creator:framework:ready", function() 
-                -- Disables the default script notification (otherwise there would be 2 notifications)
                 exports["races_creator"]:disableScriptEvent("races_creator:notify")
             end)
             

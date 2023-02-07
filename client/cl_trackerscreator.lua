@@ -1,5 +1,5 @@
 if Config.Enable['trackerscreator'] then
-    if Config.notify then 
+    if Config.Notify then 
         if Config.Colored then 
             RegisterNetEvent("trackers_creator:framework:ready", function() 
                 exports["trackers_creator"]:disableScriptEvent("trackers_creator:notify")
