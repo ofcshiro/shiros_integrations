@@ -39,6 +39,6 @@ This project is licensed under the GNU General Public License v3.0 - see the LIC
 ## Acknowledgments
 
 Inspiration, notify function, register items as useable (esx & qbcore)
-* [Mycroft](https://github.com/Mycroft-Studios) - He send me the function for Notify
+* [Mycroft](https://github.com/Mycroft-Studios) - He sent me the function for Notify
 * [Lucid](https://github.com/LucidB1) - Helped me registering the Drugs as usable items (ESX)
 * [Beans](https://github.com/BeansFL) - Converted ESX Register Drugs for QBCore
