@@ -4,7 +4,7 @@ game "gta5"
 author "Shiro"
 title "Jaksam Integrations"
 description "Premade Integrations for Jaksam Scripts" 
-version "2.2"
+version "2.3"
 
 shared_scripts { 
     '/config/config.lua',

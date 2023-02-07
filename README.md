@@ -3,7 +3,7 @@
 ## Description
 
 Its an integration Script that makes it easy to replace certain features
-in any of Jaksams Scripts at once. Currently the Scripts comes with an easy way to Change: Notify, Police Notify, Set Fuel for OX Fuel and LegacyFuel, Extended Drugs (ESX) using Drugs Creator Features and own Features (Heal overtime, Hunger and Thirst).
+in any of Jaksams Scripts at once. Currently the Scripts comes with an easy way to Change: Notify, Police Notify, Set Fuel for OX Fuel and LegacyFuel, Extended Drugs (ESX & QBCore) using Drugs Creator Features and own Features (Heal overtime, Hunger and Thirst).
 
 
 ## Getting Started
@@ -20,6 +20,8 @@ in any of Jaksams Scripts at once. Currently the Scripts comes with an easy way 
 * put ensure shiros_integrations in your server.cfg
 
 ## Version History
+* 2.3
+    * Added QBCore Extended Drugs
 * 2.2
     * Added Trackers Creator Integrations
     * Added Races Creator Integrations
@@ -39,3 +41,4 @@ This project is licensed under the GNU General Public License v3.0 - see the LIC
 Inspiration, notify function, register items as useable (esx & qbcore)
 * [Mycroft](https://github.com/Mycroft-Studios) - He send me the function for Notify
 * [Lucid](https://github.com/LucidB1) - Helped me registering the Drugs as usable items (ESX)
+* [Beans](https://github.com/BeansFL) - Converted ESX Register Drugs for QBCore
