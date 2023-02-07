@@ -3,7 +3,7 @@ Config = {}
 -- Language Settings
 Config.Locale = "de" -- Currently not Used
 Config.ServerName = 'SERVERNAME' -- In case your Notify uses a title, you can use Config.ServerName as title
-
+Config.Framework = 'esx' -- What Framework you use (esx or qbcore) QBCORE Doesnt work Currently
 -- General Settings
 ------------------------------------------------------------------------------------------
 
@@ -19,7 +19,9 @@ Config.Enable = {
     luxuryclothes = true, 
     robberycreator = true,
     vehiclekeys = true,
-    farmingcreator = true
+    farmingcreator = true, 
+    trackerscreator = true, 
+    racecreator = true
 }
 
 Config.EnableSV = {
@@ -32,7 +34,9 @@ Config.EnableSV = {
     luxuryclothes = false, 
     robberycreator = false,
     vehiclekeys = false,
-    farmingcreator = false
+    farmingcreator = false, 
+    trackerscreator = false, 
+    racecreator = false
 }
 
 
