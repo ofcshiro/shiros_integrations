@@ -21,7 +21,8 @@ Config.Enable = {
     vehiclekeys = true,
     farmingcreator = true, 
     trackerscreator = true, 
-    racecreator = true
+    racecreator = true,
+    shopscreator = true
 }
 
 Config.EnableSV = {
@@ -36,7 +37,8 @@ Config.EnableSV = {
     vehiclekeys = false,
     farmingcreator = false, 
     trackerscreator = false, 
-    racecreator = false
+    racecreator = false,
+    shopscreator = false
 }
 
 

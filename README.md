@@ -20,6 +20,8 @@ in any of Jaksams Scripts at once. Currently the Scripts comes with an easy way 
 * put ensure shiros_integrations in your server.cfg
 
 ## Version History
+* 2.4
+    * Added Shops Creator Integrations (Police & Default Notify)
 * 2.3
     * Added QBCore Extended Drugs
 * 2.2
