@@ -78,18 +78,21 @@ end
 
 Config.PoliceNotify = true -- If you want to replace the Police Notifiy
 Config.PoliceColored = false -- If your Police Notify should be colored or not
-
+Config.PoliceJobs = {
+    -- Define your Police Job IDs
+    'police', 'sheriff', 'nia'
+}
 Config.ClientPoliceNotify = function(coords, message)
     ------------------------------------------------------------------------------------------
     -- Insert your Police Notify System here. (script uses type (Config.NotifyType)))
     ------------------------------------------------------------------------------------------
     local anonym = true
     local position = {x = coords.x, y = coords.y, z = coords.z - 1}
-    local jobreceived = 'police'
     local message = message
     
-    TriggerServerEvent('roadphone:sendDispatch', GetPlayerServerId(PlayerId()), message, jobreceived, position, anonym)
-
+    for i = 1, #Config.PoliceJobs do
+        TriggerServerEvent('roadphone:sendDispatch', GetPlayerServerId(PlayerId()), message, Config.PoliceJobs[i], position, anonym)
+    end
 end
 
 -- Jobs Creator Garage Features WORK IN PROGRESS
