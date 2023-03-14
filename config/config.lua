@@ -3,7 +3,7 @@ Config = {}
 -- Language Settings
 Config.Locale = "de" -- Currently not Used
 Config.ServerName = 'SERVERNAME' -- In case your Notify uses a title, you can use Config.ServerName as title
-Config.Framework = 'esx' -- What Framework you use (esx or qbcore) QBCORE Doesnt work Currently
+Config.Framework = 'esx' -- What Framework you use (esx or qbcore)
 -- General Settings
 ------------------------------------------------------------------------------------------
 
