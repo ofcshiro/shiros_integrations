@@ -19,6 +19,15 @@ if Config.Enable['robberycreator'] then
         end
     end
 
+    -- Might dont work properly
+    
+    -- if Config.HelpNotify then
+    --     RegisterNetEvent("robberies_creator:framework:ready", function() 
+    --         -- This will replace the base function with the one you want
+    --         exports["robberies_creator"]:replaceShowHelpNotification(Config.ClientHelpNotify)
+    --     end)
+    -- end
+
     if Config.Progressbar then
         RegisterNetEvent("robberies_creator:framework:ready", function()
             exports["robberies_creator"]:disableScriptEvent("robberies_creator:internalProgressBar")

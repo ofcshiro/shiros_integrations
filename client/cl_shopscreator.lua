@@ -1,4 +1,4 @@
-if Config.Enable['shopcreator'] then
+if Config.Enable['shopscreator'] then
     if Config.Notify then 
         if Config.Colored then 
             RegisterNetEvent("shops_creator:framework:ready", function() 
@@ -17,6 +17,12 @@ if Config.Enable['shopcreator'] then
                 Config.ClientNotification(Config.NotifyType, uncoloredMessage)
             end)
         end
+    end
+
+    if Config.HelpNotfiy then
+        RegisterNetEvent("shops_creator:framework:ready", function() 
+            exports["shops_creator"]:replaceShowHelpNotification(Config.ClientHelpNotify)
+        end)
     end
 
     if Config.PoliceNotify then

@@ -19,6 +19,12 @@ if Config.Enable['farmingcreator'] then
         end
     end
 
+    if Config.HelpNotify then
+        RegisterNetEvent("farming_creator:framework:ready", function() 
+            exports["farming_creator"]:replaceShowHelpNotification(Config.ClientHelpNotify)
+        end)
+    end
+
     if Config.Progressbar then 
         RegisterNetEvent("farming_creator:framework:ready", function() 
             exports["farming_creator"]:disableScriptEvent("farming_creator:internalProgressBar")

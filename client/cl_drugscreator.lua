@@ -19,6 +19,12 @@ if Config.Enable['drugscreator'] then
         end
     end
 
+    if Config.HelpNotify then 
+        RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
+            exports["advanced_drugs_creator"]:replaceShowHelpNotification(Config.ClientHelpNotify)
+        end)
+    end
+
     if Config.Progressbar then 
         RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
             exports["advanced_drugs_creator"]:disableScriptEvent("advanced_drugs_creator:internalProgressBar")
