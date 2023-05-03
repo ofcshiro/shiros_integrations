@@ -25,15 +25,15 @@ if Config.Enable['drugscreator'] then
         end)
     end
 
-    -- if Config.Progressbar then 
-    --     RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
-    --         exports["advanced_drugs_creator"]:disableScriptEvent("advanced_drugs_creator:internalProgressBar")
-    --     end)
+    if Config.Progressbar then 
+        RegisterNetEvent("advanced_drugs_creator:framework:ready", function() 
+            exports["advanced_drugs_creator"]:disableScriptEvent("advanced_drugs_creator:internalProgressBar")
+        end)
 
-    --     RegisterNetEvent("advanced_drugs_creator:internalProgressBar", function(time, text)
-    --         Config.ProgressbarType(time, text)
-    --     end)
-    -- end
+        RegisterNetEvent("advanced_drugs_creator:internalProgressBar", function(time, text)
+            Config.ProgressbarType(time, text)
+        end)
+    end
 
     if Config.PoliceNotify then 
         if Config.PoliceColored then 

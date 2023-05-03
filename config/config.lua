@@ -82,22 +82,21 @@ end
 ------------------------------------------------------------------------------------------
 
 Config.Progressbar = true -- If you dont want the default progressbar
-Config.hexColor = '#42A5F5' -- Add your own HexColor
 
 Config.ProgressbarType = function(time, text) 
     ------------------------------------------------------------------------------------------
     -- Insert your Progressbar here (Text and Time are passed through the integration)
     ------------------------------------------------------------------------------------------
     
-    --exports['progressBars']:startUI(time, text)
-    TriggerEvent("advanced_drugs_creator:startProgressBar", time, text, Config.hexColor)
+    exports['progressBars']:startUI(time, text)
 end
 
 Config.PoliceNotify = true -- If you want to replace the Police Notifiy
 Config.PoliceColored = false -- If your Police Notify should be colored or not
 Config.PoliceJobs = {
-    -- Define your Police Job IDs
-    'police', 'sheriff', 'nia'
+    'police', 
+    'sheriff', 
+    'nia'
 }
 Config.ClientPoliceNotify = function(coords, message)
     ------------------------------------------------------------------------------------------
