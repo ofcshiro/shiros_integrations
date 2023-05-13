@@ -47,12 +47,6 @@ if Config.Enable['jobscreator'] then
         end    
     end
 
-    if Config.HelpNotify then
-        RegisterNetEvent("jobs_creator:framework:ready", function() 
-            exports["jobs_creator"]:replaceShowHelpNotification(Config.ClientHelpNotify)
-        end)
-    end
-
     if Config.Progressbar then 
         RegisterNetEvent("jobs_creator:framework:ready", function() 
             exports["jobs_creator"]:disableScriptEvent("jobs_creator:internalProgressBar")

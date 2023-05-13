@@ -62,21 +62,6 @@ Config.ClientNotification = function(type, msg)
 
 end
 
--- Helpnotify Settings
-------------------------------------------------------------------------------------------
-
-Config.Helpnotify = false 
-
-Config.ClientHelpNotify = function(message)
-    ------------------------------------------------------------------------------------------
-    -- Insert your Notification System here. (Only works with Looped Helpnotifies (Not with TextUI!))
-    -- cl_robberiescreator, cl_racescreator are commented out because it can conflict
-    ------------------------------------------------------------------------------------------
-
-    -- As am example:
-    exports['bschelp']:showHelpNotification()
-
-end
 
 -- Progressbar Settings
 ------------------------------------------------------------------------------------------

@@ -20,12 +20,6 @@ if Config.Enable['vehiclekeys'] then
             end)
         end
     end
-
-    if Config.HelpNotify then
-        RegisterNetEvent("vehicles_keys:framework:ready", function() 
-            exports["vehicles_keys"]:replaceShowHelpNotification(Config.ClientHelpNotify)
-        end)
-    end
     
     if Config.Progressbar then 
         RegisterNetEvent("vehicles_keys:framework:ready", function() 

@@ -19,12 +19,6 @@ if Config.Enable['shopscreator'] then
         end
     end
 
-    if Config.HelpNotfiy then
-        RegisterNetEvent("shops_creator:framework:ready", function() 
-            exports["shops_creator"]:replaceShowHelpNotification(Config.ClientHelpNotify)
-        end)
-    end
-
     if Config.PoliceNotify then
         if Config.PoliceColored then
             RegisterNetEvent("shops_creator:framework:ready", function() 

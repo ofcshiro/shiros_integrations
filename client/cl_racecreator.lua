@@ -19,13 +19,6 @@ if Config.Enable['racecreator'] then
         end
     end
     
-    -- Might dont work Properly
-    -- if Config.HelpNotify then
-    --     RegisterNetEvent("races_creator:framework:ready", function() 
-    --         exports["races_creator"]:replaceShowHelpNotification(Config.ClientHelpNotify)
-    --     end)
-    -- end
-
     if Config.PoliceNotify then 
         if Config.PoliceColored then 
             RegisterNetEvent("races_creator:framework:ready", function() 
