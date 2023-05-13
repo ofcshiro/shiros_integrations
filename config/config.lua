@@ -58,7 +58,7 @@ Config.ClientNotification = function(type, msg)
     -- As am example:
     -- You can use Config.ServerName as the title variable (if your notify has a title)
     
-    exports["Venice-Notification"]:Notify(msg, Config.NotifyTime, type)
+    ESX.ShowNotification(msg, Config.NotifyTime, type)
 
 end
 
